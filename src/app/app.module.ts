@@ -9,8 +9,6 @@ import { HeaderSecondaryComponent } from './components/header-secondary/header-s
 import { NavComponent } from './components/nav/nav.component';
 import { ContentComponent } from './components/content/content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgxPopper } from 'angular-popper';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -44,6 +42,8 @@ import { SidenavClassificaComponent } from './shared/sidenav-page/sidenav-classi
 import { SidenavSponsorComponent } from './shared/sidenav-page/sidenav-sponsor/sidenav-sponsor.component';
 import { CardTeamComponent } from './components/content/card-team/card-team.component'
 import { MatTableModule } from '@angular/material/table'  
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxPopper } from 'angular-popper';
 
 const material = [
   MatToolbarModule,
@@ -94,9 +94,9 @@ const material = [
     AppRoutingModule,
     BrowserAnimationsModule,
     material,
-    FontAwesomeModule,
     NgbModule,
-    NgxPopper,
+    FontAwesomeModule,
+    // NgxPopper,
     MatTableModule
   ],
   providers: [],
