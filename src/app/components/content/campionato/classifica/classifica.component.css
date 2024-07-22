@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+  }
+
+.mat-row:hover {
+    background-color: #002957;
+    color: white;
+    font: bold;
+}

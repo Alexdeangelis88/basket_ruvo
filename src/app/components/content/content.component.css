@@ -1,0 +1,17 @@
+.header__top-bar {
+    background-color: #002957;
+    display: none;
+  }
+  @media (min-width: 992px) {
+    .header__top-bar {
+      display: block;
+      height: 48px;
+    }
+  }
+
+  .header__top-bar-inner {
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+

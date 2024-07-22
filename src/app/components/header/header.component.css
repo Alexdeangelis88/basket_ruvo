@@ -1,0 +1,773 @@
+  .header__top-bar {
+    background-color: #002957;
+    display: none;
+  }
+  @media (min-width: 992px) {
+    .header__top-bar {
+      display: block;
+      height: 48px;
+    }
+  }
+
+  .header__top-bar-inner {
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+  
+
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-links__item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 12px;
+  }
+  
+  .social-links__item .fa,
+  .social-links__item .fab,
+  .social-links__item .fas,
+  .social-links__item svg {
+    font-size: 12px;
+    margin-right: 5px;
+    transition: color 0.2s ease;
+    color: #fa5f06;
+  }
+
+  .header .social-links__item .fa,
+  .header .social-links__item .fab,
+  .header .social-links__item .fas,
+  .header .social-links__item svg {
+    color: #fff;
+  }
+
+  /*inizio*/
+  .header .login  {
+    float: right;
+  }
+
+  .header .social-links__item li:nth-child(6) {
+    border: 1px dotted red;
+    margin-left: auto;
+}
+ /*fine*/
+
+  .footer .social-links__item .fa,
+  .footer .social-links__item .fab,
+  .footer .social-links__item .fas,
+  .footer .social-links__item svg {
+    color: #fff;
+  }
+
+  .social-links__item svg {
+    fill: #fa5f06;
+  }
+
+  .header .social-links__item svg {
+    fill: #fff;
+  }
+  .footer .social-links__item svg {
+    fill: #fff;
+  }
+
+  .social-links__item:last-child {
+    margin-right: 0;
+  }
+  
+  .login-links__link {
+    display: inline-block;
+    color: #6b6d70;
+    transition: color 0.2s ease;
+  }
+  .social-links__link {
+    display: inline-block;
+    color: #6b6d70;
+    transition: color 0.2s ease;
+  }
+  .header .social-links__link:hover .fa,
+  .header .social-links__link:hover .fas
+  .header .social-links__link:hover .fab {
+    color: #fa5f06;
+  }
+  .footer .social-links__link:hover {
+    color: #fff;
+  }
+  .footer .social-links__link:hover .fa,
+  .footer .social-links__link:hover .fas
+  .footer .social-links__link:hover .fab {
+    color: #fa5f06;
+  }
+  
+  .social-links--main-nav {
+    display: inline-block;
+    padding-left: 30px;
+  }
+  .social-links--main-nav .social-links__item {
+    margin-right: 19px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .social-links--main-nav .social-links__item {
+      margin-right: 10px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .social-links--main-nav {
+      padding-left: 30px;
+    }
+  }
+  .social-links--main-nav .social-links__link--svg svg {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: top;
+  }
+  
+  .social-links--top-bar {
+    padding-left: 0;
+  }
+
+  .social-links--top-bar .social-links__item {
+    margin-right: 20px;
+  }
+
+  .social-links--top-bar .social-links__item .fa,
+  .social-links--top-bar .social-links__item .fab,
+  .social-links--top-bar .social-links__item .fas,
+  .social-links--top-bar .social-links__item svg {
+    font-size: 16px;
+    /* opacity: 0.6; */
+  }
+
+  .social-links--top-bar .social-links__link .fa,
+  .social-links--top-bar .social-links__link .fas,
+  .social-links--top-bar .social-links__link .fab {
+    color: #fff;
+  }
+
+  .social-links--top-bar .social-links__link:hover .fa,
+  .social-links--top-bar .social-links__link:hover .fas,
+  .social-links--top-bar .social-links__link:hover .fab {
+    opacity: 1;
+    color: #fa5f06;
+  }
+
+  .social-links--top-bar .social-links__link--svg svg {
+    fill: #fff;
+  }
+
+  .social-links--top-bar .social-links__link--svg:hover svg,
+  .social-links--top-bar .social-links__link--svg:hover svg {
+    opacity: 1;
+    fill: #fa5f06;
+  }
+  
+  .social-links--btn .social-links__item {
+    margin: 0;
+  }
+  .social-links--btn .social-links__link {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 0 2px;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .social-links--btn .social-links__link:hover {
+    opacity: 0.8;
+  }
+  .social-links--btn .social-links__link:hover .fa,
+  .social-links--btn .social-links__link:hover .fas,
+  .social-links--btn .social-links__link:hover .fab {
+    color: #fff;
+  }
+  .social-links--btn .social-links__link .fa,
+  .social-links--btn .social-links__link .fas,
+  .social-links--btn .social-links__link .fab {
+    margin: 0;
+  }
+  .social-links--btn .social-links__link--lg {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 6px;
+  }
+  .social-links--btn [class*=social-links__link--] > .fa,
+  .social-links--btn [class*=social-links__link--] > .fas,
+  .social-links--btn [class*=social-links__link--] > .fab {
+    color: #fff;
+  }
+  .social-links--btn .social-links__link--fb {
+    background-color: #4d6baa;
+  }
+  .social-links--btn .social-links__link--twitter {
+    background-color: #3fcef2;
+    color: #fff;
+  }
+  .social-links--btn .social-links__link--linkedin {
+    background-color: #0077B5;
+  }
+  .social-links--btn .social-links__link--vk {
+    background-color: #6383A8;
+  }
+  .social-links--btn .social-links__link--ok {
+    background-color: #F4731C;
+  }
+  .social-links--btn .social-links__link--whatsapp {
+    background-color: #25D366;
+  }
+  .social-links--btn .social-links__link--viber {
+    background-color: #7C529E;
+  }
+  .social-links--btn .social-links__link--viber img {
+    width: 12px;
+    height: auto;
+  }
+  .social-links--btn .social-links__link--telegram {
+    background-color: #2CA5E0;
+  }
+  .social-links--btn .social-links__link--mail,
+  .social-links--btn .social-links__link--site {
+    background-color: #fff;
+  }
+  .social-links--btn.social-links--btn-block .social-links__item {
+    display: inline;
+  }
+  .social-links--btn.social-links--btn-block .social-links__link {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 12px;
+    font-size: 9px;
+    height: 24px;
+    line-height: 24px;
+  }
+  
+  .social-links--circle .social-links__item {
+    margin-right: 20px;
+  }
+  @media (min-width: 992px) {
+    .social-links--circle .social-links__item {
+      margin-right: 10px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .social-links--circle .social-links__item {
+      margin-right: 24px;
+    }
+  }
+  .social-links--circle .social-links__item:last-child {
+    margin-right: 0;
+  }
+  .social-links--circle .social-links__link {
+    border: 2px solid rgba(154, 157, 162, 0.4);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    vertical-align: top;
+  }
+  .social-links--circle .social-links__link .fa,
+  .social-links--circle .social-links__link .fas,
+  .social-links--circle .social-links__link .fab {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .social-links--circle .social-links__link svg {
+    display: inline-block;
+    width: 14px;
+    height: 30px;
+    margin-right: 0;
+  }
+  .social-links--circle .social-links__link:hover {
+    border-color: #9a66ca;
+  }
+  .social-links--circle .social-links__link:hover .fa,
+  .social-links--circle .social-links__link:hover .fas,
+  .social-links--circle .social-links__link:hover .fab {
+    color: #fff;
+  }
+  .social-links--circle .social-links__link:hover svg {
+    fill: #fff;
+  }
+  
+  .social-links--circle-filled .social-links__item {
+    margin-right: 10px;
+  }
+  @media (min-width: 992px) {
+    .social-links--circle-filled .social-links__item {
+      margin-right: 10px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .social-links--circle-filled .social-links__item {
+      margin-right: 18px;
+    }
+  }
+  .social-links--circle-filled .social-links__item:last-child {
+    margin-right: 0;
+  }
+  .social-links--circle-filled .social-links__link {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    vertical-align: top;
+  }
+  .social-links--circle-filled .social-links__link::before {
+    color: #fff;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .social-links--circle-filled .social-links__link:hover {
+    opacity: 0.8;
+  }
+  .social-links--circle-filled .social-links__link:hover::before {
+    color: #fff;
+  }
+  
+  .player-info-details__item--social-links .social-links--circle-filled-sm {
+    padding-top: 4px;
+  }
+  .social-links--circle-filled-sm .social-links__item {
+    margin-right: 5px;
+  }
+  @media (min-width: 992px) {
+    .social-links--circle-filled-sm .social-links__item {
+      margin-right: 5px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .social-links--circle-filled-sm .social-links__item {
+      margin-right: 9px;
+    }
+  }
+  .social-links--circle-filled-sm .social-links__item:last-child {
+    margin-right: 0;
+  }
+  .social-links--circle-filled-sm .social-links__link {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+  .social-links--circle-filled-sm .social-links__link::before {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  
+  .social-link-url::before {
+    content: "";
+    margin-right: 0;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .social-link-url[href*=http], .social-link-url[href*="#"] {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .social-link-url[href*=http]::before, .social-link-url[href*="#"]::before {
+    content: "\f0c1";
+  }
+  .social-link-url[href*="amazon."] {
+    background-color: #ff9900;
+  }
+  .social-link-url[href*="amazon."]::before {
+    content: "\f270";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 700;
+  }
+  .social-link-url[href*="behance.net"], .social-link-url[href*="be.net"] {
+    background-color: #1769ff;
+  }
+  .social-link-url[href*="behance.net"]::before, .social-link-url[href*="be.net"]::before {
+    content: "\f1b4";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="bitbucket.org"] {
+    background-color: #205081;
+  }
+  .social-link-url[href*="bitbucket.org"]::before {
+    content: "\f171";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="del.icio.us"] {
+    background-color: #3399ff;
+  }
+  .social-link-url[href*="del.icio.us"]::before {
+    content: "\f1a5";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="dribbble.com"] {
+    background-color: #ea4c89;
+  }
+  .social-link-url[href*="dribbble.com"]::before {
+    content: "\f17d";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="digg.com"] {
+    background-color: #005be2;
+  }
+  .social-link-url[href*="digg.com"]::before {
+    content: "\f1a6";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="etsy.com"] {
+    background-color: #d5641c;
+  }
+  .social-link-url[href*="etsy.com"]::before {
+    content: "\f2d7";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="facebook.com"] {
+    background-color: #3B5998;
+  }
+  .social-link-url[href*="facebook.com"]::before {
+    content: "\f09a";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="faceit.com"] {
+    background-color: #FF5500;
+  }
+  .social-link-url[href*="faceit.com"]::before {
+    display: none;
+  }
+  .social-link-url[href*="faceit.com"]::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 40px;
+    line-height: 40px;
+    /* background-image: url("../../assets/images/icon-faceit.svg"); */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14px auto;
+  }
+  .social-link-url[href*="flickr.com"] {
+    background-color: #ff1981;
+  }
+  .social-link-url[href*="flickr.com"]::before {
+    content: "\f16e";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="foursquare.com"] {
+    background-color: #f94877;
+  }
+  .social-link-url[href*="foursquare.com"]::before {
+    content: "\f180";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="github.com"] {
+    background-color: #333;
+  }
+  .social-link-url[href*="github.com"]::before {
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="gitlab.com"] {
+    background-color: #554488;
+  }
+  .social-link-url[href*="gitlab.com"]::before {
+    content: "\f296";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="imdb.com"] {
+    background-color: #f5de50;
+  }
+  .social-link-url[href*="imdb.com"]::before {
+    content: "\f2d8";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="instagram.com"] {
+    background-color: #E4405F;
+  }
+  .social-link-url[href*="instagram.com"]::before {
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="linkedin.com"] {
+    background-color: #0077B5;
+  }
+  .social-link-url[href*="linkedin.com"]::before {
+    content: "\f0e1";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="medium.com"] {
+    background-color: #00ab6c;
+  }
+  .social-link-url[href*="medium.com"]::before {
+    content: "\f23a";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="paypal.com"] {
+    background-color: #003087;
+  }
+  .social-link-url[href*="paypal.com"]::before {
+    content: "\f1ed";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="pinterest.com"] {
+    background-color: #bd081c;
+  }
+  .social-link-url[href*="pinterest.com"]::before {
+    content: "\f231";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="quora.com"] {
+    background-color: #a82400;
+  }
+  .social-link-url[href*="quora.com"]::before {
+    content: "\f2c4";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="reddit.com"] {
+    background-color: #ff4500;
+  }
+  .social-link-url[href*="reddit.com"]::before {
+    content: "\f281";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="slack.com"] {
+    background-color: #3eb991;
+  }
+  .social-link-url[href*="slack.com"]::before {
+    content: "\f198";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="soundcloud.com"] {
+    background-color: #ff8800;
+  }
+  .social-link-url[href*="soundcloud.com"]::before {
+    content: "\f1be";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="spotify.com"] {
+    background-color: #1db954;
+  }
+  .social-link-url[href*="spotify.com"]::before {
+    content: "\f1bc";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="snapchat.com"] {
+    background-color: #fffc00;
+  }
+  .social-link-url[href*="snapchat.com"]::before {
+    content: "\f2ac";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="stackoverflow.com"] {
+    background-color: #f48024;
+  }
+  .social-link-url[href*="stackoverflow.com"]::before {
+    content: "\f16c";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="steamcommunity.com"] {
+    background-color: #171A21;
+  }
+  .social-link-url[href*="steamcommunity.com"]::before {
+    content: "\f1b6";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="stumbleupon.com"] {
+    background-color: #eb4924;
+  }
+  .social-link-url[href*="stumbleupon.com"]::before {
+    content: "\f1a4";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="tripadvisor.com"] {
+    background-color: #00af87;
+  }
+  .social-link-url[href*="tripadvisor.com"]::before {
+    content: "\f262";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="tumblr.com"] {
+    background-color: #35465c;
+  }
+  .social-link-url[href*="tumblr.com"]::before {
+    content: "\f173";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="twitch.tv"] {
+    background-color: #6441A4;
+  }
+  .social-link-url[href*="twitch.tv"]::before {
+    content: "\f1e8";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="twitter.com"] {
+    background-color: #1DA1F2;
+  }
+  .social-link-url[href*="twitter.com"]::before {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="vimeo.com"] {
+    background-color: #1ab7ea;
+  }
+  .social-link-url[href*="vimeo.com"]::before {
+    content: "\f194";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="weibo.com"] {
+    background-color: #df2029;
+  }
+  .social-link-url[href*="weibo.com"]::before {
+    content: "\f18a";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="wikipedia.org"] {
+    background-color: #000000;
+  }
+  .social-link-url[href*="wikipedia.org"]::before {
+    content: "\f266";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="wordpress.org"], .social-link-url[href*="wordpress.com"] {
+    border-color: #21759b;
+  }
+  .social-link-url[href*="wordpress.org"]::before, .social-link-url[href*="wordpress.com"]::before {
+    content: "\f19a";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="xing.com"] {
+    background-color: #026466;
+  }
+  .social-link-url[href*="xing.com"]::before {
+    content: "\f168";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="yahoo.com"] {
+    background-color: #410093;
+  }
+  .social-link-url[href*="yahoo.com"]::before {
+    content: "\f19e";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="youtube.com"] {
+    background-color: #FF0000;
+  }
+  .social-link-url[href*="youtube.com"]::before {
+    content: "\f167";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="mixer.com"] {
+    background-color: #002050;
+  }
+  .social-link-url[href*="mixer.com"]::before {
+    content: "稜";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="vk.com"], .social-link-url[href*="vkontakte.com"] {
+    background-color: #6383A8;
+  }
+  .social-link-url[href*="vk.com"]::before, .social-link-url[href*="vkontakte.com"]::before {
+    content: "\f189";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+  .social-link-url[href*="ok.ru"] {
+    background-color: #F4731C;
+  }
+  .social-link-url[href*="ok.ru"]::before {
+    content: "\f263";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+  }
+
+/* Tooltips
+/* ------------------------- */
+.tooltip {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  padding: 5px 10px;
+  color: #292c31;
+  text-align: center;
+  background-color: #fa5f06;
+  border-radius: 2px;
+}
+
+.bs-tooltip-top .arrow::before {
+  border-top-color: #fa5f06;
+}
+
+.bs-tooltip-right .arrow::before {
+  border-right-color: #fa5f06;
+}
+
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #fa5f06;
+}
+
+.bs-tooltip-left .arrow::before {
+  border-left-color: #fa5f06;
+}
+
+
+/* .header .social-links .social-links--main-nav .social-links--top-bar .login{
+} */

@@ -1,0 +1,59 @@
+.title-banner {
+    margin-bottom: 80px;
+    display: block !important;
+    background: #002957 !important;
+    color: #ffffff !important;
+}
+
+
+.title {
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    text-transform: uppercase !important;
+    margin: 0px;
+    padding: 8px;
+}
+
+.div-sponsor{
+    text-align: center;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.main-sponsor{    
+    max-height: 300px;
+}
+
+.sponsor{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top
+}
+
+
+@media (max-width: 549px) {
+
+    .div-sponsor {
+        max-width: 375px;
+        margin-bottom: 10px;
+    }
+
+    .main-sponsor{
+        max-width: 375px;
+    }
+    .sponsor{
+        max-width: 375px;
+
+    }
+}	
+
+
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 0px;
+}

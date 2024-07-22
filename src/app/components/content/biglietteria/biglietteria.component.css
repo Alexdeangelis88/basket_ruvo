@@ -1,0 +1,32 @@
+.div-img-cover{
+    object-fit: cover;
+    max-height: 800px;
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+.img-cover{
+    max-height: 800px;
+}
+
+h2{
+    font-family: "Poppins", Arial, sans-serif;
+	font-style: normal;
+}
+
+p{
+    font-family: "Poppins", Arial, sans-serif;
+	font-style: normal;
+}
+
+@media (max-width: 549px) {
+
+    .div-img-cover {
+        max-width: 375px;
+        margin-bottom: 10px;
+    }
+
+    .img-cover{
+        max-width: 375px;
+    }
+}	

@@ -1,0 +1,51 @@
+<app-header-page title="{{title}}"></app-header-page>
+
+
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="giornta">
+                        <th mat-header-cell *matHeaderCellDef> GIORNATA </th>
+                        <td mat-cell *matCellDef="let element"> {{element.giornta}} </td>
+                      </ng-container>
+                  
+                    <ng-container matColumnDef="partita">
+                      <th mat-header-cell *matHeaderCellDef> PARTITA </th>
+                      <td mat-cell *matCellDef="let element"> {{element.partita}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="data">
+                      <th mat-header-cell *matHeaderCellDef> DATA </th>
+                      <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="orario">
+                      <th mat-header-cell *matHeaderCellDef> ORARIO </th>
+                      <td mat-cell *matCellDef="let element"> {{element.orario}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="risultato">
+                      <th mat-header-cell *matHeaderCellDef> RISULTATO </th>
+                      <td mat-cell *matCellDef="let element"> {{element.risultato}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="palazzetto">
+                        <th mat-header-cell *matHeaderCellDef> PALAZZETTO </th>
+                        <td mat-cell *matCellDef="let element"> {{element.palazzetto}} </td>
+                      </ng-container>
+                       
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>             
+            </div>
+             <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                 <app-sidenav-page></app-sidenav-page>
+             </div>    
+         </div>
+     </div>
+ </section>
+ 

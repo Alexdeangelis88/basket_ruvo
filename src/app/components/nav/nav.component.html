@@ -1,0 +1,65 @@
+<div class="row align-items-center site-navbar">
+   <div class="col-12 text-center">
+      <h1 class="mb-0 site-logo"><a href="#" class="mb-0 header-nav" onclick="return false;">BENVENUTO NEL SITO UFFICIALE DEL RUVO DI PUGLIA</a></h1>
+   </div>
+</div>   
+
+
+ <header class="sticky-top">
+   <!-- The main navbar menu -->
+   <div class="container-fluid">
+       <div class="row">
+         <div class="site-navbar" role="banner">
+            <div class="container">  
+               <div class="row align-items-center">
+                  <div class="col-12 d-none d-xl-block">
+                      <nav class="site-navigation position-custom text-center" role="navigation"> <!--position-relative -->
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                           <li id="li-1" class="active element-li" (click)="changeNavbarSelected('1')"><a href="#" onclick="return false;" [routerLink] = "['home']"><span>Home</span></a></li>
+                           <!-- <li class="has-children">
+                              <a href="#" onclick="return false;"><span>Dropdown <i class="fas fa-angle-down"></i></span></a>
+                              <ul class="dropdown arrow-top">
+                                 <li><a href="#" onclick="return false;" (click)="changeNavbarSelected(2)">Menu One</a></li>
+                                 <li><a href="#" onclick="return false;" (click)="changeNavbarSelected(3)">Menu Two</a></li>
+                                 <li class="has-children">
+                                    <a href="#" onclick="return false;">Dropdown <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown">
+                                       <li><a href="#" onclick="return false;" (click)="changeNavbarSelected(4)">Menu One</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li> -->
+                           <li id="li-2" class="has-children element-li">
+                              <a href="#" onclick="return false;"><span>Società <i class="fas fa-angle-down"></i></span></a>
+                              <ul class="dropdown arrow-top">
+                                 <li id="li-2-1" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('2','1')" [routerLink] = "['storia']">Storia</a></li>
+                                 <li id="li-2-2" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('2','2')" [routerLink] = "['organigramma']">Organigramma</a></li>
+                              </ul>
+                           </li>
+                           <li id="li-3" class="has-children element-li">
+                                <a href="#" onclick="return false;"><span>Squadra <i class="fas fa-angle-down"></i></span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li id="li-3-1" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('3','1')" [routerLink] = "['roster']">Roster 2024/2025</a></li>
+                                    <li id="li-3-2" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('3','2')" [routerLink] = "['staff']">Staff</a></li>                         
+                                </ul>
+                            </li>    
+                            <li id="li-4" class="has-children element-li">
+                                <a href="#" onclick="return false;"><span>Campionato <i class="fas fa-angle-down"></i></span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li id="li-4-1" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('4','1')" [routerLink] = "['classifica']">Classifica</a></li>
+                                    <li id="li-4-2" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('4','2')" [routerLink] = "['calendario']">Calendario</a></li>                         
+                                </ul>
+                            </li>                                        
+                           <li id="li-5" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('5')" [routerLink] = "['news']"><span>News</span></a></li>
+                           <li id="li-6" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('6')" [routerLink] = "['sponsor']"><span>Sponsor</span></a></li>
+                           <li id="li-7" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('7')" [routerLink] = "['biglietteria']"><span>Biglietteria</span></a></li>
+                           <li id="li-8" class="element-li"><a href="#" onclick="return false;" (click)="changeNavbarSelected('8')" [routerLink] = "['contatti']"><span>Contatti</span></a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+   </div>
+</header>
