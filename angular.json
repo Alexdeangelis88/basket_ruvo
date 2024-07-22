@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ruvo-basket"
+  "defaultProject": "ruvo-basket",
+  "cli": {
+    "analytics": "dddf4b81-19de-4945-81f9-0bc6d0794fec"
+  }
 }
