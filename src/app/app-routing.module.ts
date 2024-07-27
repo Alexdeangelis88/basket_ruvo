@@ -11,6 +11,7 @@ import { NewsComponent } from './components/content/news/news.component';
 import { SponsorComponent } from './components/content/sponsor/sponsor.component';
 import { BiglietteriaComponent } from './components/content/biglietteria/biglietteria.component';
 import { ContattiComponent } from './components/content/contatti/contatti.component';
+import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
 
 const routes: Routes = [
   { path: "" , redirectTo: "home" , pathMatch: "full"},
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: "sponsor" , component: SponsorComponent},
   { path: "biglietteria" , component: BiglietteriaComponent},
   { path: "contatti" , component: ContattiComponent},
+  { path: "news/:title" , component: DettaglioNewsComponent},
 ];
 
 @NgModule({

@@ -2,7 +2,7 @@ table {
     width: 100%;
   }
 
-.mat-row:hover {
+.mat-mdc-row:hover {
     background-color: #002957;
     color: white;
     font: bold;

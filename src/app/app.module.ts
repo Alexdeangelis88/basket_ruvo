@@ -41,9 +41,14 @@ import { SidenavSocialComponent } from './shared/sidenav-page/sidenav-social/sid
 import { SidenavClassificaComponent } from './shared/sidenav-page/sidenav-classifica/sidenav-classifica.component';
 import { SidenavSponsorComponent } from './shared/sidenav-page/sidenav-sponsor/sidenav-sponsor.component';
 import { CardTeamComponent } from './components/content/card-team/card-team.component'
+import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
 import { MatTableModule } from '@angular/material/table'  
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxPopper } from 'angular-popper';
+import { appendInfiniteContent } from '@syncfusion/ej2-angular-grids';
+import { MatSelectModule} from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const material = [
   MatToolbarModule,
@@ -87,7 +92,8 @@ const material = [
     SidenavSocialComponent,
     SidenavClassificaComponent,
     SidenavSponsorComponent,
-    CardTeamComponent
+    CardTeamComponent,
+    DettaglioNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +103,11 @@ const material = [
     NgbModule,
     FontAwesomeModule,
     // NgxPopper,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
