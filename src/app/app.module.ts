@@ -48,6 +48,8 @@ import { appendInfiniteContent } from '@syncfusion/ej2-angular-grids';
 import { MatSelectModule} from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { StaffGiovaniliComponent } from './components/giovanili/staff-giovanili/staff-giovanili.component';
+import { RosterGiovaniliComponent } from './components/giovanili/roster-giovanili/roster-giovanili.component';
 
 const material = [
   MatToolbarModule,
@@ -92,7 +94,9 @@ const material = [
     SidenavClassificaComponent,
     SidenavSponsorComponent,
     CardTeamComponent,
-    DettaglioNewsComponent
+    DettaglioNewsComponent,
+    StaffGiovaniliComponent,
+    RosterGiovaniliComponent
   ],
   imports: [
     BrowserModule,

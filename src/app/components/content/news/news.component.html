@@ -3,12 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 signle-news">
+                <div class="row"> 
+                    
+                    <div *ngFor="let n of news" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 signle-news">
                         <div class="news d-flex flex-wrap box pb-4">
                             <div class="news col-12 text-center d-none d-md-block">
-                                <div class="header-news">
-                                    <img src="../../../../assets/images/upload/giorgi.jpg" class="img-style"> 
+                                <div class="header-news" (click)="dettaglioNotizia(n)">
+                                    <img src="{{n.pathImg}}" class="img-style" > 
                                     <div class="hoverText">
                                         <div class="caption_lente">
                                             <i class="fas fa-search-plus"></i>
@@ -16,146 +17,32 @@
                                      </div>
                                 </div>
                                 <div class="content-news">
-                                    <p class="data-news">22 luglio alle ore 18:03 <span class="visualizzazioni-news"><i class="fas fa-eye"></i> 150</span></p>
+                                    <p class="data-news">{{n.dataIns}} <span class="visualizzazioni-news"><i class="fas fa-eye"></i> {{n.numeroVisualizzazione}}</span></p>
                                     <h5>
-                                        <a [routerLink]="['/news', '1']" class="link-news">
-                                            Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!
+                                        <a href="#" class="link-news" onclick="return false;" (click)="dettaglioNotizia(n)">
+                                            {{n.titolo}}
                                         </a>
                                     </h5>
                                     <hr class="linea">
-                                    <p class="preview-news">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
+                                    <p class="preview-news">{{n.breveDescrizione}}</p>
                                 </div>
                             </div>   
                             <div class="col-12 text-center d-md-none d-flex flex-row team-mobile">
-                                <img class="mb-0" src="../../../../assets/images/upload/giorgi.jpg" alt="img-team" loading="lazy">
+                                <img class="mb-0" src="{{n.pathImg}}" alt="img-team" loading="lazy" (click)="dettaglioNotizia(n)">
                                 <div class="d-flex flex-column align-items-start ps-3 justify-content-center">                                
-                                    <p class="body-2 mb-0">22 luglio alle ore 18:03</p>
+                                    <p class="body-2 mb-0">{{n.dataIns}}</p>
                                     <p class="body-2 mb-0 b-bottom">
                                         <span class="visualizzazioni-news">
                                             <i class="fas fa-eye"></i> 
-                                            150
+                                            {{n.numeroVisualizzazione}}
                                         </span>
                                     </p>
-                                   <p style="font-weight: bold;" class="role caption medium text-uppercase text-left style-mobile b-bottom">Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!</p>
-                                   <p class="role caption medium text-uppercase text-left style-mobile">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
+                                   <p style="font-weight: bold;" class="role caption medium text-uppercase text-left style-mobile b-bottom" (click)="dettaglioNotizia(n)">{{n.titolo}}</p>
+                                   <p class="role caption medium text-uppercase text-left style-mobile">{{n.breveDescrizione}}</p>
                                 </div>
                              </div> 
                         </div>                                
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 signle-news">
-                        <div class="news d-flex flex-wrap box pb-4">
-                            <div class="news col-12 text-center d-none d-md-block">
-                                <div class="header-news">
-                                    <img src="../../../../assets/images/upload/giorgi.jpg" class="img-style"> 
-                                    <div class="hoverText">
-                                        <div class="caption_lente">
-                                            <i class="fas fa-search-plus"></i>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="content-news">
-                                    <p class="data-news">22 luglio alle ore 18:03 <span class="visualizzazioni-news"><i class="fas fa-eye"></i> 150</span></p>
-                                    <h5>
-                                        <a href="" class="link-news">
-                                            Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!
-                                        </a>
-                                    </h5>
-                                    <hr class="linea">
-                                    <p class="preview-news">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                            </div>   
-                            <div class="col-12 text-center d-md-none d-flex flex-row team-mobile">
-                                <img class="mb-0" src="../../../../assets/images/upload/giorgi.jpg" alt="img-team" loading="lazy">
-                                <div class="d-flex flex-column align-items-start ps-3 justify-content-center">                                
-                                    <p class="body-2 mb-0">22 luglio alle ore 18:03</p>
-                                    <p class="body-2 mb-0 b-bottom">
-                                        <span class="visualizzazioni-news">
-                                            <i class="fas fa-eye"></i> 
-                                            150
-                                        </span>
-                                    </p>
-                                   <p style="font-weight: bold;" class="role caption medium text-uppercase text-left style-mobile b-bottom">Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!</p>
-                                   <p class="role caption medium text-uppercase text-left style-mobile">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                             </div> 
-                        </div>                                
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 signle-news">
-                        <div class="news d-flex flex-wrap box pb-4">
-                            <div class="news col-12 text-center d-none d-md-block">
-                                <div class="header-news">
-                                    <img src="../../../../assets/images/upload/giorgi.jpg" class="img-style"> 
-                                    <div class="hoverText">
-                                        <div class="caption_lente">
-                                            <i class="fas fa-search-plus"></i>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="content-news">
-                                    <p class="data-news">22 luglio alle ore 18:03 <span class="visualizzazioni-news"><i class="fas fa-eye"></i> 150</span></p>
-                                    <h5>
-                                        <a href="" class="link-news">
-                                            Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!
-                                        </a>
-                                    </h5>
-                                    <hr class="linea">
-                                    <p class="preview-news">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                            </div>   
-                            <div class="col-12 text-center d-md-none d-flex flex-row team-mobile">
-                                <img class="mb-0" src="../../../../assets/images/upload/giorgi.jpg" alt="img-team" loading="lazy">
-                                <div class="d-flex flex-column align-items-start ps-3 justify-content-center">                                
-                                    <p class="body-2 mb-0">22 luglio alle ore 18:03</p>
-                                    <p class="body-2 mb-0 b-bottom">
-                                        <span class="visualizzazioni-news">
-                                            <i class="fas fa-eye"></i> 
-                                            150
-                                        </span>
-                                    </p>
-                                   <p style="font-weight: bold;" class="role caption medium text-uppercase text-left style-mobile b-bottom">Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!</p>
-                                   <p class="role caption medium text-uppercase text-left style-mobile">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                             </div> 
-                        </div>                                
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 signle-news">
-                        <div class="news d-flex flex-wrap box pb-4">
-                            <div class="news col-12 text-center d-none d-md-block">
-                                <div class="header-news">
-                                    <img src="../../../../assets/images/upload/giorgi.jpg" class="img-style"> 
-                                    <div class="hoverText">
-                                        <div class="caption_lente">
-                                            <i class="fas fa-search-plus"></i>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="content-news">
-                                    <p class="data-news">22 luglio alle ore 18:03 <span class="visualizzazioni-news"><i class="fas fa-eye"></i> 150</span></p>
-                                    <h5>
-                                        <a href="" class="link-news">
-                                            Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!
-                                        </a>
-                                    </h5>
-                                    <hr class="linea">
-                                    <p class="preview-news">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                            </div>   
-                            <div class="col-12 text-center d-md-none d-flex flex-row team-mobile">
-                                <img class="mb-0" src="../../../../assets/images/upload/giorgi.jpg" alt="img-team" loading="lazy">
-                                <div class="d-flex flex-column align-items-start ps-3 justify-content-center">                                
-                                    <p class="body-2 mb-0">22 luglio alle ore 18:03</p>
-                                    <p class="body-2 mb-0 b-bottom">
-                                        <span class="visualizzazioni-news">
-                                            <i class="fas fa-eye"></i> 
-                                            150
-                                        </span>
-                                    </p>
-                                   <p style="font-weight: bold;" class="role caption medium text-uppercase text-left style-mobile b-bottom">Crifo Wines Ruvo di Puglia, altro guerriero nel pitturato: ecco Gianluca Giorgi!</p>
-                                   <p class="role caption medium text-uppercase text-left style-mobile">La Crifo Wines Ruvo di Puglia è lieta di annunciare l'acquisizione delle prestazioni di Gianluca Giorgi, centro classe 1995 [...]</p>
-                                </div>
-                             </div> 
-                        </div>                                
-                    </div>
+                    </div>                                   
                 </div>
                                    
             </div>
