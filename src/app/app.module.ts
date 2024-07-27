@@ -44,7 +44,6 @@ import { CardTeamComponent } from './components/content/card-team/card-team.comp
 import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
 import { MatTableModule } from '@angular/material/table'  
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgxPopper } from 'angular-popper';
 import { appendInfiniteContent } from '@syncfusion/ej2-angular-grids';
 import { MatSelectModule} from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
