@@ -1,35 +1,14 @@
-// $(function() {
-
-//     var siteSticky = function() {
-//           $(".js-sticky-header").sticky({topSpacing:0});
-//       };
-//       siteSticky();
-  
-//       var siteDropdown = function() {
-  
-//           $('nav .dropdown').hover(function(){
-//               var $this = $(this);
-//               $this.addClass('show');
-//               $this.find('> a').attr('aria-expanded', true);
-//               $this.find('.dropdown-menu').addClass('show');
-//           }, function(){
-//               var $this = $(this);
-//                   $this.removeClass('show');
-//                   $this.find('> a').attr('aria-expanded', false);
-//                   $this.find('.dropdown-menu').removeClass('show');
-//           });
-  
-  
-//           $('#dropdown04').on('show.bs.dropdown', function () {
-//             console.log('show');
-//           });
-  
-//         $('.navbar .dropdown > a').click(function(){
-//           location.href = this.href;
-//         });
-//       }; 
-//       siteDropdown();
-  
-//   });
-
-
+document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 303) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+           // remove padding top from body
+          document.body.style.paddingTop = '0';
+        } 
+    });
+  }); 

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +22,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatTableModule } from '@angular/material/table'  
+import { MatSelectModule} from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule} from '@angular/material/dialog';
 import { HomeComponent } from './components/content/home/home.component';
 import { UltimiComunicatiComponent } from './components/content/home/ultimi-comunicati/ultimi-comunicati.component';
 import { StoriaComponent } from './components/content/societa/storia/storia.component';
@@ -42,14 +46,17 @@ import { SidenavClassificaComponent } from './shared/sidenav-page/sidenav-classi
 import { SidenavSponsorComponent } from './shared/sidenav-page/sidenav-sponsor/sidenav-sponsor.component';
 import { CardTeamComponent } from './components/content/card-team/card-team.component'
 import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
-import { MatTableModule } from '@angular/material/table'  
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { appendInfiniteContent } from '@syncfusion/ej2-angular-grids';
-import { MatSelectModule} from '@angular/material/select';
-import { MatInputModule } from '@angular/material/input';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StaffGiovaniliComponent } from './components/giovanili/staff-giovanili/staff-giovanili.component';
 import { RosterGiovaniliComponent } from './components/giovanili/roster-giovanili/roster-giovanili.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatCardModule } from '@angular/material/card';
+import { LogInComponent } from './components/header/log-in/log-in.component';
+import { HTTP_INTERCEPTORS, provideHttpClient } from '@angular/common/http';
+import { MessageComponent } from './shared/utilities/message/message.component';
+import { AuthInterceptor } from './services/auth.interceptor';
+// import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const material = [
   MatToolbarModule,
@@ -63,7 +70,13 @@ const material = [
   MatFormFieldModule,
   MatButtonToggleModule,
   MatProgressSpinnerModule,
-  MatBadgeModule
+  MatBadgeModule,
+  MatDialogModule,
+  MatSelectModule,
+  MatInputModule,
+  MatTableModule,
+  MatCardModule,
+  MatOptionModule
 ]
 
 
@@ -96,7 +109,9 @@ const material = [
     CardTeamComponent,
     DettaglioNewsComponent,
     StaffGiovaniliComponent,
-    RosterGiovaniliComponent
+    RosterGiovaniliComponent,
+    LogInComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -105,14 +120,21 @@ const material = [
     material,
     NgbModule,
     FontAwesomeModule,
-    // NgxPopper,
-    MatTableModule,
-    MatSelectModule,
-    MatInputModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports : [material] ,
+  providers: [
+    provideHttpClient(),
+    {
+      provide : HTTP_INTERCEPTORS,
+      useClass : AuthInterceptor,
+      multi : true
+    }
+  ],
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

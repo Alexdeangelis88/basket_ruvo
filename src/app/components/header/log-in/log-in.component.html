@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-title class="login-style">Login Admin</mat-card-title>
+    <mat-card-content>
+       <form [name]="loginForm" [formGroup]="loginForm" (ngSubmit)="onlogin()">
+       <p>
+          <mat-form-field>
+             <input type="text" matInput placeholder="Username" formControlName="username">
+             <mat-error *ngIf="loginForm.get('username')?.hasError('required')">Username obblicatorio</mat-error> 
+          </mat-form-field>
+       </p>
+       <p>
+          <mat-form-field>
+             <input type="password" matInput placeholder="Password" formControlName="password">
+             <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password obblicatoria</mat-error> 
+          </mat-form-field>
+       </p>
+       <div class="button">
+          <button type="submit" mat-button [disabled]="!loginForm.valid">Login</button>
+       </div>
+       </form>
+    </mat-card-content>
+ </mat-card>

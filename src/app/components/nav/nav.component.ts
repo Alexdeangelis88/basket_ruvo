@@ -28,4 +28,8 @@ export class NavComponent implements OnInit {
       document.getElementById("li-"+sel+"-"+subsel)?.classList.add("active");
     }  
   }
+
+  onMouseMove: { (event: MouseEvent): void } = (event: MouseEvent) => {
+    console.log("funziona")
+  }
 }

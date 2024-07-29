@@ -5,7 +5,7 @@
 </div>   
 
 
- <header class="sticky-top">
+ <header id="navbar_top" ><!--class="sticky-top" -->
    <!-- The main navbar menu -->
    <div class="container-fluid">
        <div class="row">
@@ -13,7 +13,7 @@
             <div class="container">  
                <div class="row align-items-center">
                   <div class="col-12 d-none d-xl-block">
-                      <nav class="site-navigation position-custom text-center" role="navigation"> <!--position-relative -->
+                      <nav id="navbar-principale" class="site-navigation position-custom text-center navbar" role="navigation"> <!--position-relative -->
                         <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                            <li id="li-1" class="active element-li" (click)="changeNavbarSelected('1')"><a href="#" onclick="return false;" [routerLink] = "['home']"><span>Home</span></a></li>
                            <!-- <li class="has-children">
