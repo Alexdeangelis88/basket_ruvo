@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './roster-giovanili.component.css'
 })
 export class RosterGiovaniliComponent {
-  title : string = "roster giovanili";
+  title : string = "giovanili";
+  macrocategoria : string = '4';
 }

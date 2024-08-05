@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RosterComponent implements OnInit {
   title : string = "roster";
+  macrocategoria : string = '2';
   constructor() { }
 
   ngOnInit(): void {

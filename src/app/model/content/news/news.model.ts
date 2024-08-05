@@ -1,6 +1,6 @@
 import { anaCategorieModel } from "./ana-categoria-news.mode";
 
-export interface newsModel{
+export interface NotizieDTO{
     id: number;
     pathImg: string;
     dataIns: string;
@@ -8,5 +8,5 @@ export interface newsModel{
     titolo: string;
     descrizione: string;
     breveDescrizione: string;
-    categorie: anaCategorieModel[] | any;
+    categorie: anaCategorieModel[];
 }

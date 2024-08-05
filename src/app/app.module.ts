@@ -48,8 +48,8 @@ import { CardTeamComponent } from './components/content/card-team/card-team.comp
 import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { StaffGiovaniliComponent } from './components/giovanili/staff-giovanili/staff-giovanili.component';
-import { RosterGiovaniliComponent } from './components/giovanili/roster-giovanili/roster-giovanili.component';
+import { StaffGiovaniliComponent } from './components/content/giovanili/staff-giovanili/staff-giovanili.component';
+import { RosterGiovaniliComponent } from './components/content/giovanili/roster-giovanili/roster-giovanili.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
 import { LogInComponent } from './components/header/log-in/log-in.component';

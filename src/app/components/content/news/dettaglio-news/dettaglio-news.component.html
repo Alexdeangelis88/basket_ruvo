@@ -5,8 +5,9 @@
             <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">                
                     <div class="header-news">
                         <div class="post-category">
-                            <!-- <div *ngFor="let cat of news.categorie"><span class="post">{{cat.descrizioneCategoria}}</span></div> -->
-                            <span class="post" *ngFor="let cat of news.categorie">{{cat.descrizioneCategoria}}</span>
+                            <span *ngIf="this.news.categorie.length">
+                                <span class="post" *ngFor="let cat of news.categorie">{{cat.descrizioneCategoria}}</span>
+                            </span>
 
                             <span class="visualizzazioni-news"><p class="data-news">{{news.dataIns}}&nbsp;<span class="visualizzazioni-news"><i class="fas fa-eye"></i> {{news.numeroVisualizzazione}}</span></p></span>
                         </div>
@@ -23,8 +24,6 @@
                             {{news.descrizione}}                            
                         </p>
                     </div>
-
-
             </div>
             <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
                 <app-sidenav-page></app-sidenav-page>
@@ -33,3 +32,5 @@
      </div>
  </section>
  
+
+

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganigrammaComponent implements OnInit {
   title : string = "organigramma";
+  macrocategoria : string = '1';
+
   constructor() { }
 
   ngOnInit(): void {

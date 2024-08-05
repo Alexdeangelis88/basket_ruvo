@@ -12,8 +12,8 @@ import { BiglietteriaComponent } from './components/content/biglietteria/bigliet
 import { ContattiComponent } from './components/content/contatti/contatti.component';
 import { DettaglioNewsComponent } from './components/content/news/dettaglio-news/dettaglio-news.component';
 import { RouterModule, Routes } from '@angular/router';
-import { RosterGiovaniliComponent } from './components/giovanili/roster-giovanili/roster-giovanili.component';
-import { StaffGiovaniliComponent } from './components/giovanili/staff-giovanili/staff-giovanili.component';
+import { RosterGiovaniliComponent } from './components/content/giovanili/roster-giovanili/roster-giovanili.component';
+import { StaffGiovaniliComponent } from './components/content/giovanili/staff-giovanili/staff-giovanili.component';
 
 const routes: Routes = [
   { path: "" , redirectTo: "home" , pathMatch: "full"},

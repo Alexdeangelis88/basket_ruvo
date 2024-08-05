@@ -456,7 +456,9 @@ main.background-black .team-grid .single-team {
     width: 350px;
     left: 0px;
     top: 0px;
-    border-radius: 8px
+    border-radius: 8px;
+    /* Rimosso gap dal div "grid-page-team d-flex flex-wrap  pb-4"" e inserito direttamente sulla single card */
+    margin: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -495,7 +497,9 @@ main.background-black .team-grid .single-team {
 }
 
 .g24 {
-    gap: 24px
+    gap: 24px;
+    /* margin-right: 24px;
+    margin-bottom: 24px; */
 }
 
 .br-8 {

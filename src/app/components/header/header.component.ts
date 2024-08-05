@@ -26,6 +26,8 @@ export class HeaderComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(r => {
       tag?.classList.add("position-custom");
+      // if(r !== undefined){
+      // }
 
     });
   }
