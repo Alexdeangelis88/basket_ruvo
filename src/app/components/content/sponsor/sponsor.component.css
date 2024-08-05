@@ -20,7 +20,7 @@
     margin-bottom: 10px;
 }
 
-.main-sponsor{    
+.single-sponsor{    
     max-height: 300px;
 }
 
@@ -39,7 +39,7 @@
         margin-bottom: 10px;
     }
 
-    .main-sponsor{
+    .single-sponsor{
         max-width: 375px;
     }
     .sponsor{

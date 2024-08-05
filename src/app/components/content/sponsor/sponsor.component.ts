@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { anaTipoSponsor } from 'src/app/model/sponsor/anaTipoSponsor';
+import { SponsorService } from 'src/app/services/sponsor.service';
 
 @Component({
   selector: 'app-sponsor',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorComponent implements OnInit {
   title : string = "sponsor";
-  constructor() { }
+  ats : anaTipoSponsor[] = [];
+  constructor(private serivce : SponsorService) { }
 
   ngOnInit(): void {
+    this.serivce.GetStrutturaSponsor().subscribe(r =>{this.ats = r ; console.log(this.ats)});
+
   }
 
 }
